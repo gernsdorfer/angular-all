@@ -1,3 +1,5 @@
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](link to site)
+
 # AngularFull
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
@@ -33,3 +35,21 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Resource](https://prettier.io/)
 
 Format modified Files before commit
+
+## Storybook
+
+[Review](https://www.chromaticqa.com/builds?appId=5daf2694ae848400208a07d9)
+
+run Storybook `yarn run storybook`
+
+## State Mangements
+
+coming soon
+
+## Server Side rendering
+
+coming soon
+
+## Progressive Webapps
+
+coming soon
