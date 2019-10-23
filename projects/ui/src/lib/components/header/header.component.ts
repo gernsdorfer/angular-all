@@ -1,12 +1,15 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation
+} from '@angular/core';
 
 @Component({
-  selector: 'lib-ui-header',
+  selector: 'ui-lib-header',
   template: `
-    <h1>
-      <ng-content></ng-content>
-    </h1>
-    <hr />
+    <header>
+      <ng-content select="ui-lib-header-item"></ng-content>
+    </header>
   `,
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

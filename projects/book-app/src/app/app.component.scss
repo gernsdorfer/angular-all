@@ -1,0 +1,12 @@
+ui-lib-header-item a {
+  color: white;
+}
+
+main {
+  display: flex;
+  margin-top: 10px;
+  .content-item {
+    padding: 20px;
+    width: 100%;
+  }
+}

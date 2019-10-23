@@ -4,13 +4,73 @@
       "id": 1,
       "title": "Clean Code",
       "author": "Robert Cecil Martin",
-      "preview": "https://bilder.buecher.de/produkte/23/23888/23888404z.jpg"
+      "preview": "http://t2.gstatic.com/images?q=tbn:ANd9GcQP799LJmnpKVZJzAHpsU-1baLsnLdEmF0HE4L-p-qB8f9W6R7y"
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "Joanne K. Rowling",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "Joanne K. Rowling",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "Joanne K. Rowling",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/a/a0/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": "Joanne K. Rowling",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/c/c7/Harry_Potter_and_the_Goblet_of_Fire.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": "Joanne K. Rowling",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/7/70/Harry_Potter_and_the_Order_of_the_Phoenix.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Harry Potter - The Half-Blood Prince",
+      "author": "Joanne K. Rowling",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/f/f0/Harry_Potter_and_the_Half-Blood_Prince.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Harry Potter - The Deathly Hallows",
+      "author": "Joanne K. Rowling",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/a/a9/Harry_Potter_and_the_Deathly_Hallows.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Fellowship of the Ring",
+      "author": "J. R. R. Tolkien",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/8/8e/The_Fellowship_of_the_Ring_cover.gif"
+    },
+    {
+      "id": 9,
+      "title": "The Two Towers",
+      "author": "J. R. R. Tolkien",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/a/a1/The_Two_Towers_cover.gif"
+    },
+    {
+      "id": 10,
+      "title": "The Return of the King\n",
+      "author": "J. R. R. Tolkien",
+      "preview": "https://upload.wikimedia.org/wikipedia/en/1/11/The_Return_of_the_King_cover.gif"
     }
   ],
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
+      "message": "some comment",
       "bookId": 1
     }
   ]

@@ -1,0 +1,11 @@
+.list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  ui-lib-list-item {
+    width: 100%;
+    display: block;
+    margin: 5px;
+  }
+}

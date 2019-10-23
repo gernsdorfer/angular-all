@@ -1,0 +1,21 @@
+<div class="back-to-list">
+  <a routerLink="../" queryParamsHandling="merge">back to list</a>
+</div>
+<ui-lib-card>
+  <ui-lib-card-header>
+    <h1>{{ book?.title }}</h1>
+  </ui-lib-card-header>
+  <ui-lib-card-body>
+    <ui-lib-image [src]="book?.preview" [alt]="book?.title">
+      {{ book?.author }}
+    </ui-lib-image>
+  </ui-lib-card-body>
+  <ui-lib-card-footer>
+    <h2>Comments</h2>
+    <ui-lib-list>
+      <ui-lib-list-item *ngFor="let comment of comments?.comments">
+        {{ comment.message }}
+      </ui-lib-list-item>
+    </ui-lib-list>
+  </ui-lib-card-footer>
+</ui-lib-card>

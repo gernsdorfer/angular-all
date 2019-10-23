@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  .prev {
+    margin-right: 5px;
+  }
+  .next {
+    margin-right: 5px;
+  }
+  .total {
+    margin-right: 5px;
+  }
+  .items-per-page-selection {
+    margin-left: 10px;
+  }
+}

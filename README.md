@@ -63,3 +63,8 @@ coming soon
 ## Progressive Webapps
 
 coming soon
+
+## CI Integration
+
+- travis (Code coverage)
+- Heroku

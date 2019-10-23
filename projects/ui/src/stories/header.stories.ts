@@ -1,11 +1,12 @@
-import { storiesOf } from '@storybook/angular';
-import { text, number, withKnobs } from '@storybook/addon-knobs';
+import { moduleMetadata, storiesOf } from '@storybook/angular';
+import { withKnobs } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { viewports } from './config/viewports';
 import { backgroundColors } from './config/colors';
 import { HeaderComponent } from '../lib/components';
+import { HeaderItemComponent } from '../lib/components/header/header-item/header-item.component';
 
-storiesOf('UI', module)
+storiesOf('header', module)
   .addDecorator(withKnobs)
   .addDecorator(withA11y)
   .addParameters({
@@ -14,20 +15,23 @@ storiesOf('UI', module)
   .addParameters({
     backgrounds: backgroundColors
   })
+  .addDecorator(
+    moduleMetadata({
+      declarations: [HeaderComponent, HeaderItemComponent]
+    })
+  )
   .add(
-    'header',
+    'ui-lib-header',
     () => {
-      const headerContent = text('text', 'my Header');
-      const counter = number('counter', 1);
-
       return {
-        moduleMetadata: {
-          declarations: [HeaderComponent]
-        },
-        template: `<lib-ui-header >${headerContent}</lib-ui-header>`
+        template: `<ui-lib-header >
+                        <ui-lib-header-item routerLink="/">Link A</ui-lib-header-item>
+                        <ui-lib-header-item routerLink="/">Link B</ui-lib-header-item>
+                        <ui-lib-header-item routerLink="/"><a href="#">Link C</a></ui-lib-header-item>
+                    </ui-lib-header>`
       };
     },
     {
-      notes: 'default render header component'
+      notes: 'complete header'
     }
   );

@@ -15,7 +15,9 @@
     "lib": ["es2018", "dom"],
     "paths": {
       "ui": ["dist/ui"],
-      "ui/*": ["dist/ui/*"]
+      "ui/*": ["dist/ui/*"],
+      "books-api": ["dist/books-api"],
+      "books-api/*": ["dist/books-api/*"]
     }
   },
   "angularCompilerOptions": {

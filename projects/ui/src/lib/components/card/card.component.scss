@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  border-radius: 6px;
+  padding: 2rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  .header {
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .body {
+    padding: 2rem 0 2rem;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 2rem 0 2rem;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+  }
+}

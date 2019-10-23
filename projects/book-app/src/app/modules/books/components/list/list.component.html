@@ -1,0 +1,40 @@
+<ui-lib-list>
+  <ui-lib-list-item *ngFor="let book of books?.books">
+    <a [routerLink]="['./', book.id]" queryParamsHandling="merge">
+      <ui-lib-image [src]="book.preview">
+        {{ book.title }}
+      </ui-lib-image>
+    </a>
+  </ui-lib-list-item>
+</ui-lib-list>
+<ui-lib-pagination
+  *ngIf="books?.currentPage"
+  [currentPage]="books?.currentPage"
+  [pages]="books?.pages"
+  [total]="books?.total"
+  [itemsPerPage]="books?.itemsPerPage"
+  (pageSizeChange)="changePageSize($event)"
+>
+  <ui-lib-pagination-prev>
+    <a
+      routerLink="./"
+      [queryParams]="{} | mergeObject: ListQuerys.Page:books?.currentPage - 1"
+      queryParamsHandling="merge"
+    >
+      prev
+    </a>
+  </ui-lib-pagination-prev>
+  <ui-lib-pagination-next>
+    <a
+      routerLink="./"
+      [queryParams]="{} | mergeObject: ListQuerys.Page:books?.currentPage + 1"
+      queryParamsHandling="merge"
+    >
+      next
+    </a>
+  </ui-lib-pagination-next>
+  <ui-lib-pagination-items-per-page>
+    items per page:
+  </ui-lib-pagination-items-per-page>
+  <ui-lib-pagination-pages>total pages:</ui-lib-pagination-pages>
+</ui-lib-pagination>

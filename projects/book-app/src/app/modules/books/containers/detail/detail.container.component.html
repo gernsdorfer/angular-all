@@ -1,0 +1,9 @@
+<ng-container *ngIf="book$ | async as book; else loading">
+  <book-app-detail
+    [book]="book"
+    [comments]="comments$ | async"
+  ></book-app-detail>
+</ng-container>
+<ng-template #loading>
+  <ui-lib-loading></ui-lib-loading>
+</ng-template>

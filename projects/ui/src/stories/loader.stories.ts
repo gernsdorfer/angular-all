@@ -6,7 +6,7 @@ import { backgroundColors } from './config/colors';
 import { LoaderComponent } from '../lib/components';
 import { withNotes } from '@storybook/addon-notes';
 
-storiesOf('UI', module)
+storiesOf('loader', module)
   .addDecorator(withKnobs)
   .addDecorator(withA11y)
   .addParameters({
@@ -16,11 +16,10 @@ storiesOf('UI', module)
     backgrounds: backgroundColors
   })
   .add(
-    'loader',
-    withNotes('Testing the background color for the editable area by setting it to red')(() => ({
-      component: LoaderComponent,
-      props: {
-        isLoading: boolean('loader', true)
-      }
+    'ui-lib-loading',
+    withNotes(
+      'Testing the background color for the editable area by setting it to red'
+    )(() => ({
+      component: LoaderComponent
     }))
   );
