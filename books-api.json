@@ -1,0 +1,17 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Clean Code",
+      "author": "Robert Cecil Martin",
+      "preview": "https://bilder.buecher.de/produkte/23/23888/23888404z.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "bookId": 1
+    }
+  ]
+}

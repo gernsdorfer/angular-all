@@ -12,7 +12,8 @@
     "test": "ng test",
     "build-storybook": "build-storybook -c ./projects/ui/.storybook",
     "storybook": "start-storybook -p 6006 -c ./projects/ui/.storybook",
-    "chromatic": "CHROMATIC_APP_CODE=ocir8nx3fv8 chromatic"
+    "chromatic": "CHROMATIC_APP_CODE=ocir8nx3fv8 chromatic",
+    "server:api": "json-server --watch books-api.json"
   },
   "husky": {
     "hooks": {
@@ -30,6 +31,7 @@
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
     "babel-loader": "^8.0.6",
+    "json-server": "^0.15.1",
     "rxjs": "~6.5.3",
     "storybook-chromatic": "^3.0.3",
     "tslib": "^1.10.0",
